@@ -1,24 +1,36 @@
 <h1 align="center">CodePilot</h1>
 
+<div align="center">
+  
+  ### [🔗 Live Demo](https://setiadeepanshu01.github.io/Code-Pilot/)
+  
+</div>
+
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 > *Ever stared at a new codebase written by others feeling completely lost? This tutorial shows you how to build an AI agent that analyzes GitHub repositories and creates beginner-friendly tutorials explaining exactly how the code works.*
 
-<p align="center">
-  <img
-    src="./assets/banner.png" width="800"
-  />
-</p>
+<div align="center">
+  <h3>📊 Streamlit App</h3>
+  <img src="./assets/streamlit.png" width="600" alt="Streamlit interface demo" />
+</div>
 
 This project crawls GitHub repositories and builds a knowledge base from the code. It analyzes entire codebases to identify core abstractions and how they interact, and transforms complex code into beginner-friendly tutorials with clear visualizations.
 
-## ⭐ Example Results for Popular GitHub Repositories!
-
 <p align="center">
     <img
-      src="./assets/example.png" width="600"
+      src="./assets/streamlit.png" width="600"
     />
 </p>
+
+## ⭐ Example Results for Popular GitHub Repositories!
+
+
+<div align="center">
+  <h3>🔍 Sample Tutorial Output</h3>
+  <img src="./assets/example.png" width="600" alt="Example tutorial output" />
+</div>
+
 
 🤯 All these tutorials are generated **entirely by AI** by crawling the GitHub repo!
 
