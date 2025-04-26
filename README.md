@@ -16,7 +16,7 @@ This project crawls GitHub repositories and builds a knowledge base from the cod
 
 <p align="center">
     <img
-      src="./assets/banner.png" width="600"
+      src="./assets/example.png" width="600"
     />
 </p>
 
