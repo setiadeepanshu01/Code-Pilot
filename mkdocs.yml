@@ -1,0 +1,274 @@
+site_name: Code Pilot
+site_description: Documentation for various projects and codebases
+site_author: Deepanshu Setia
+
+# Theme configuration
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - content.code.copy
+    - search.highlight
+    - search.share
+    - toc.follow
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  custom_dir: overrides
+
+# Plugins for dynamic navigation and other features
+plugins:
+  - search
+  - mkdocs-jupyter
+  - autorefs
+
+# Extensions
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+
+# Extra JavaScript for Mermaid support
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+  - javascripts/mermaid.js
+
+# Extra CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Extra directories to include
+docs_dir: docs
+extra_templates_dirs:
+  - overrides
+extra_files:
+  - assets
+
+# Detailed navigation showing all markdown files in each project folder
+nav:
+  - Home: index.md
+  - Projects:
+    - AutoGen Core:
+      - Overview: "AutoGen Core/index.md"
+      - Agent: "AutoGen Core/01_agent.md"
+      - Messaging System: "AutoGen Core/02_messaging_system__topic___subscription_.md"
+      - AgentRuntime: "AutoGen Core/03_agentruntime.md"
+      - Tool: "AutoGen Core/04_tool.md"
+      - ChatCompletionClient: "AutoGen Core/05_chatcompletionclient.md"
+      - ChatCompletionContext: "AutoGen Core/06_chatcompletioncontext.md"
+      - Memory: "AutoGen Core/07_memory.md"
+      - Component: "AutoGen Core/08_component.md"
+    - Browser Use:
+      - Overview: "Browser Use/index.md"
+      - Agent: "Browser Use/01_agent.md"
+      - System Prompt: "Browser Use/02_system_prompt.md"
+      - Browser Context: "Browser Use/03_browsercontext.md"
+      - DOM Representation: "Browser Use/04_dom_representation.md"
+      - Action Controller & Registry: "Browser Use/05_action_controller___registry.md"
+      - Message Manager: "Browser Use/06_message_manager.md"
+      - Data Structures (Views): "Browser Use/07_data_structures__views_.md"
+      - Telemetry Service: "Browser Use/08_telemetry_service.md"
+    - Celery:
+      - Overview: "Celery/index.md"
+      - Celery App: "Celery/01_celery_app.md"
+      - Configuration: "Celery/02_configuration.md"
+      - Task: "Celery/03_task.md"
+      - Broker Connection (AMQP): "Celery/04_broker_connection__amqp_.md"
+      - Worker: "Celery/05_worker.md"
+      - Result Backend: "Celery/06_result_backend.md"
+      - Beat (Scheduler): "Celery/07_beat__scheduler_.md"
+      - Canvas (Signatures & Primitives): "Celery/08_canvas__signatures___primitives_.md"
+      - Events: "Celery/09_events.md"
+      - Bootsteps: "Celery/10_bootsteps.md"
+    - Click:
+      - Overview: "Click/index.md"
+      - Command & Group: "Click/01_command___group.md"
+      - Decorators: "Click/02_decorators.md"
+      - Parameter (Option & Argument): "Click/03_parameter__option___argument_.md"
+      - ParamType: "Click/04_paramtype.md"
+      - Context: "Click/05_context.md"
+      - Term UI (Terminal User Interface): "Click/06_term_ui__terminal_user_interface_.md"
+      - Click Exceptions: "Click/07_click_exceptions.md"
+    - Codex:
+      - Overview: "Codex/index.md"
+      - Terminal UI (Ink Components): "Codex/01_terminal_ui__ink_components_.md"
+      - Input Handling (TextBuffer Editor): "Codex/02_input_handling__textbuffer_editor_.md"
+      - Agent Loop: "Codex/03_agent_loop.md"
+      - Approval Policy & Security: "Codex/04_approval_policy___security.md"
+      - Response & Tool Call Handling: "Codex/05_response___tool_call_handling.md"
+      - Command Execution & Sandboxing: "Codex/06_command_execution___sandboxing.md"
+      - Configuration Management: "Codex/07_configuration_management.md"
+      - Single Pass Mode: "Codex/08_single_pass_mode.md"
+    - Crawl4AI:
+      - Overview: "Crawl4AI/index.md"
+      - AsyncCrawlerStrategy: "Crawl4AI/01_asynccrawlerstrategy.md"
+      - AsyncWebCrawler: "Crawl4AI/02_asyncwebcrawler.md"
+      - CrawlerRunConfig: "Crawl4AI/03_crawlerrunconfig.md"
+      - ContentScrapingStrategy: "Crawl4AI/04_contentscrapingstrategy.md"
+      - RelevantContentFilter: "Crawl4AI/05_relevantcontentfilter.md"
+      - ExtractionStrategy: "Crawl4AI/06_extractionstrategy.md"
+      - CrawlResult: "Crawl4AI/07_crawlresult.md"
+      - DeepCrawlStrategy: "Crawl4AI/08_deepcrawlstrategy.md"
+      - CacheContext & CacheMode: "Crawl4AI/09_cachecontext___cachemode.md"
+      - BaseDispatcher: "Crawl4AI/10_basedispatcher.md"
+    - CrewAI:
+      - Overview: "CrewAI/index.md"
+      - Crew: "CrewAI/01_crew.md"
+      - Agent: "CrewAI/02_agent.md"
+      - Task: "CrewAI/03_task.md"
+      - Tool: "CrewAI/04_tool.md"
+      - Process: "CrewAI/05_process.md"
+      - LLM: "CrewAI/06_llm.md"
+      - Memory: "CrewAI/07_memory.md"
+      - Knowledge: "CrewAI/08_knowledge.md"
+    - DSPy:
+      - Overview: "DSPy/index.md"
+      - Module & Program: "DSPy/01_module___program.md"
+      - Signature: "DSPy/02_signature.md"
+      - Example: "DSPy/03_example.md"
+      - Predict: "DSPy/04_predict.md"
+      - LM (Language Model Client): "DSPy/05_lm__language_model_client_.md"
+      - Teleprompter: "DSPy/06_teleprompter.md"
+      - Optimizer: "DSPy/07_optimizer.md"
+      - Assertions: "DSPy/08_assertions.md"
+      - ChainOfThought: "DSPy/09_chainofthought.md"
+      - BootstrapFewShot: "DSPy/10_bootstrapfewshot.md"
+    - FastAPI:
+      - Overview: "FastAPI/index.md"
+      - Application: "FastAPI/01_application.md"
+      - Path Operation: "FastAPI/02_path_operation.md"
+      - Dependencies: "FastAPI/03_dependencies.md"
+      - OpenAPI Schema: "FastAPI/04_openapi_schema.md"
+      - Request Handling: "FastAPI/05_request_handling.md"
+      - Response Handling: "FastAPI/06_response_handling.md"
+      - Middleware: "FastAPI/07_middleware.md"
+      - Background Tasks: "FastAPI/08_background_tasks.md"
+    - Flask:
+      - Overview: "Flask/index.md"
+      - Application: "Flask/01_application.md"
+      - Routing: "Flask/02_routing.md"
+      - Request: "Flask/03_request.md"
+      - Response: "Flask/04_response.md"
+      - Templates: "Flask/05_templates.md"
+      - Session & Cookies: "Flask/06_session___cookies.md"
+      - Blueprints: "Flask/07_blueprints.md"
+      - Extensions: "Flask/08_extensions.md"
+    - Google A2A:
+      - Overview: "Google A2A/index.md"
+      - Agent Card: "Google A2A/01_agent_card.md"
+      - Task: "Google A2A/02_task.md"
+      - A2A Protocol & Core Types: "Google A2A/03_a2a_protocol___core_types.md"
+      - A2A Server Implementation: "Google A2A/04_a2a_server_implementation.md"
+      - A2A Client Implementation: "Google A2A/05_a2a_client_implementation.md"
+      - Task Handling Logic (Server Side): "Google A2A/06_task_handling_logic__server_side_.md"
+      - Streaming Communication (SSE): "Google A2A/07_streaming_communication__sse_.md"
+      - Multi-Agent Orchestration (Host Agent): "Google A2A/08_multi_agent_orchestration__host_agent_.md"
+      - Demo UI Application & Service: "Google A2A/09_demo_ui_application___service.md"
+    - LangGraph:
+      - Overview: "LangGraph/index.md"
+      - State: "LangGraph/01_state.md"
+      - Graph: "LangGraph/02_graph.md"
+      - Node: "LangGraph/03_node.md"
+      - ChannelDef: "LangGraph/04_channeldef.md"
+      - CompileEngine: "LangGraph/05_compileengine.md"
+      - Executor: "LangGraph/06_executor.md"
+    - LevelDB:
+      - Overview: "LevelDB/index.md"
+      - DB (Database): "LevelDB/01_db__database_.md"
+      - Options: "LevelDB/02_options.md"
+      - WriteBatch: "LevelDB/03_writebatch.md"
+      - Iterator: "LevelDB/04_iterator.md"
+      - Slice: "LevelDB/05_slice.md"
+      - Cache: "LevelDB/06_cache.md"
+      - Comparator: "LevelDB/07_comparator.md"
+      - Filter Policy: "LevelDB/08_filter_policy.md"
+      - Status: "LevelDB/09_status.md"
+    - MCP Python SDK:
+      - Overview: "MCP Python SDK/index.md"
+      - Client: "MCP Python SDK/01_client.md"
+      - Config: "MCP Python SDK/02_config.md"
+      - Protocol: "MCP Python SDK/03_protocol.md"
+      - Agent: "MCP Python SDK/04_agent.md"
+      - Types: "MCP Python SDK/05_types.md"
+      - Streaming: "MCP Python SDK/06_streaming.md"
+      - Connection: "MCP Python SDK/07_connection.md"
+      - Authentication: "MCP Python SDK/08_authentication.md"
+      - Error Handling: "MCP Python SDK/09_error_handling.md"
+    - NumPy Core:
+      - Overview: "NumPy Core/index.md"
+      - Array (ndarray): "NumPy Core/01_array__ndarray_.md"
+      - Universal Functions (ufuncs): "NumPy Core/02_universal_functions__ufuncs_.md"
+      - Dtypes: "NumPy Core/03_dtypes.md"
+      - Indexing: "NumPy Core/04_indexing.md"
+      - Broadcasting: "NumPy Core/05_broadcasting.md"
+      - Array Creation: "NumPy Core/06_array_creation.md"
+      - Array Manipulation: "NumPy Core/07_array_manipulation.md"
+      - Error Handling: "NumPy Core/08_error_handling.md"
+    - OpenManus:
+      - Overview: "OpenManus/index.md"
+      - Cognition: "OpenManus/01_cognition.md"
+      - Memory: "OpenManus/02_memory.md"
+      - Planner: "OpenManus/03_planner.md"
+      - Intent System: "OpenManus/04_intent_system.md"
+      - Tools Registry: "OpenManus/05_tools_registry.md"
+      - Task Execution: "OpenManus/06_task_execution.md"
+      - LLM Integration: "OpenManus/07_llm_integration.md"
+      - Agent Communication: "OpenManus/08_agent_communication.md"
+      - UI Integration: "OpenManus/09_ui_integration.md"
+    - Pydantic Core:
+      - Overview: "Pydantic Core/index.md"
+      - SchemaValidator: "Pydantic Core/01_schemavalidator.md"
+      - CoreSchema: "Pydantic Core/02_coreschema.md"
+      - SchemaSerializer: "Pydantic Core/03_schemaserializer.md"
+      - Error Handling: "Pydantic Core/04_error_handling.md"
+      - SchemaValidator Creation: "Pydantic Core/05_schemavalidator_creation.md"
+      - Type System: "Pydantic Core/06_type_system.md"
+    - Requests:
+      - Overview: "Requests/index.md"
+      - Session: "Requests/01_session.md"
+      - Request: "Requests/02_request.md"
+      - Response: "Requests/03_response.md"
+      - HTTP Adapters: "Requests/04_http_adapters.md"
+      - Authentication Handlers: "Requests/05_authentication_handlers.md"
+      - Exception Hierarchy: "Requests/06_exception_hierarchy.md"
+      - Transport Adapters: "Requests/07_transport_adapters.md"
+      - Hook System: "Requests/08_hook_system.md"
+    - SmolaAgents:
+      - Overview: "SmolaAgents/index.md"
+      - MultiStepAgent: "SmolaAgents/01_multistepagent.md"
+      - Model Interface: "SmolaAgents/02_model_interface.md"
+      - Tool: "SmolaAgents/03_tool.md"
+      - AgentMemory: "SmolaAgents/04_agentmemory.md"
+      - PromptTemplates: "SmolaAgents/05_prompttemplates.md"
+      - PythonExecutor: "SmolaAgents/06_pythonexecutor.md"
+      - AgentType: "SmolaAgents/07_agenttype.md"
+      - AgentLogger & Monitor: "SmolaAgents/08_agentlogger___monitor.md"
+  - Design: design.md
