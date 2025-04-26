@@ -22,9 +22,9 @@ This project crawls GitHub repositories and builds a knowledge base from the cod
 
 🤯 All these tutorials are generated **entirely by AI** by crawling the GitHub repo!
 
-- [AutoGen Core](./docs/AutoGenCore/index.md) - Build AI teams that talk, think, and solve problems together like coworkers!
+- [AutoGen Core](./docs/AutoGen%20Core/index.md) - Build AI teams that talk, think, and solve problems together like coworkers!
 
-- [Browser Use](./docs/BrowserUse/index.md) - Let AI surf the web for you, clicking buttons and filling forms like a digital assistant!
+- [Browser Use](./docs/Browser%20Use/index.md) - Let AI surf the web for you, clicking buttons and filling forms like a digital assistant!
 
 - [Celery](./docs/Celery/index.md) - Supercharge your app with background tasks that run while you sleep!
 
@@ -42,19 +42,19 @@ This project crawls GitHub repositories and builds a knowledge base from the cod
 
 - [Flask](./docs/Flask/index.md) - Craft web apps with minimal code that scales from prototype to production!
 
-- [Google A2A](./docs/GoogleA2A/index.md) - The universal language that lets AI agents collaborate across borders!
+- [Google A2A](./docs/Google%20A2A/index.md) - The universal language that lets AI agents collaborate across borders!
 
 - [LangGraph](./docs/LangGraph/index.md) - Design AI agents as flowcharts where each step remembers what happened before!
 
 - [LevelDB](./docs/LevelDB/index.md) - Store data at warp speed with Google's engine that powers blockchains!
 
-- [MCP Python SDK](./docs/MCPPythonSDK/index.md) - Build powerful apps that communicate through an elegant protocol without sweating the details!
+- [MCP Python SDK](./docs/MCP%20Python%20SDK/index.md) - Build powerful apps that communicate through an elegant protocol without sweating the details!
 
-- [NumPy Core](./docs/NumPyCore/index.md) - Master the engine behind data science that makes Python as fast as C!
+- [NumPy Core](./docs/NumPy%20Core/index.md) - Master the engine behind data science that makes Python as fast as C!
 
 - [OpenManus](./docs/OpenManus/index.md) - Build AI agents with digital brains that think, learn, and use tools just like humans do!
 
-- [Pydantic Core](./docs/PydanticCore/index.md) - Validate data at rocket speed with just Python type hints!
+- [Pydantic Core](./docs/Pydantic%20Core/index.md) - Validate data at rocket speed with just Python type hints!
 
 - [Requests](./docs/Requests/index.md) - Talk to the internet in Python with code so simple it feels like cheating!
 
