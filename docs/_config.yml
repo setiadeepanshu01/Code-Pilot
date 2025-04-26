@@ -4,6 +4,9 @@ title: CodePilot
 # Theme settings
 remote_theme: just-the-docs/just-the-docs
 
+plugins:
+  - jekyll-remote-theme
+
 # Navigation
 nav_sort: case_sensitive
 
