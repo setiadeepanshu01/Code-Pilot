@@ -34,43 +34,43 @@ This project crawls GitHub repositories and builds a knowledge base from the cod
 
 🤯 All these tutorials are generated **entirely by AI** by crawling the GitHub repo!
 
-- [AutoGen Core](./docs/AutoGen%20Core/index.md) - Build AI teams that talk, think, and solve problems together like coworkers!
+- [AutoGen Core](https://setiadeepanshu01.github.io/Code-Pilot/AutoGen%20Core) - Build AI teams that talk, think, and solve problems together like coworkers!
 
-- [Browser Use](./docs/Browser%20Use/index.md) - Let AI surf the web for you, clicking buttons and filling forms like a digital assistant!
+- [Browser Use](https://setiadeepanshu01.github.io/Code-Pilot/Browser%20Use) - Let AI surf the web for you, clicking buttons and filling forms like a digital assistant!
 
-- [Celery](./docs/Celery/index.md) - Supercharge your app with background tasks that run while you sleep!
+- [Celery](https://setiadeepanshu01.github.io/Code-Pilot/Celery) - Supercharge your app with background tasks that run while you sleep!
 
-- [Click](./docs/Click/index.md) - Turn Python functions into slick command-line tools with just a decorator!
+- [Click](https://setiadeepanshu01.github.io/Code-Pilot/Click) - Turn Python functions into slick command-line tools with just a decorator!
 
-- [Codex](./docs/Codex/index.md) - Turn plain English into working code with this AI terminal wizard!
+- [Codex](https://setiadeepanshu01.github.io/Code-Pilot/Codex) - Turn plain English into working code with this AI terminal wizard!
 
-- [Crawl4AI](./docs/Crawl4AI/index.md) - Train your AI to extract exactly what matters from any website!
+- [Crawl4AI](https://setiadeepanshu01.github.io/Code-Pilot/Crawl4AI) - Train your AI to extract exactly what matters from any website!
 
-- [CrewAI](./docs/CrewAI/index.md) - Assemble a dream team of AI specialists to tackle impossible problems!
+- [CrewAI](https://setiadeepanshu01.github.io/Code-Pilot/CrewAI) - Assemble a dream team of AI specialists to tackle impossible problems!
 
-- [DSPy](./docs/DSPy/index.md) - Build LLM apps like Lego blocks that optimize themselves!
+- [DSPy](https://setiadeepanshu01.github.io/Code-Pilot/DSPy) - Build LLM apps like Lego blocks that optimize themselves!
 
-- [FastAPI](./docs/FastAPI/index.md) - Create APIs at lightning speed with automatic docs that clients will love!
+- [FastAPI](https://setiadeepanshu01.github.io/Code-Pilot/FastAPI) - Create APIs at lightning speed with automatic docs that clients will love!
 
-- [Flask](./docs/Flask/index.md) - Craft web apps with minimal code that scales from prototype to production!
+- [Flask](https://setiadeepanshu01.github.io/Code-Pilot/Flask) - Craft web apps with minimal code that scales from prototype to production!
 
-- [Google A2A](./docs/Google%20A2A/index.md) - The universal language that lets AI agents collaborate across borders!
+- [Google A2A](https://setiadeepanshu01.github.io/Code-Pilot/Google%20A2A) - The universal language that lets AI agents collaborate across borders!
 
-- [LangGraph](./docs/LangGraph/index.md) - Design AI agents as flowcharts where each step remembers what happened before!
+- [LangGraph](https://setiadeepanshu01.github.io/Code-Pilot/LangGraph) - Design AI agents as flowcharts where each step remembers what happened before!
 
-- [LevelDB](./docs/LevelDB/index.md) - Store data at warp speed with Google's engine that powers blockchains!
+- [LevelDB](https://setiadeepanshu01.github.io/Code-Pilot/LevelDB) - Store data at warp speed with Google's engine that powers blockchains!
 
-- [MCP Python SDK](./docs/MCP%20Python%20SDK/index.md) - Build powerful apps that communicate through an elegant protocol without sweating the details!
+- [MCP Python SDK](https://setiadeepanshu01.github.io/Code-Pilot/MCP%20Python%20SDK) - Build powerful apps that communicate through an elegant protocol without sweating the details!
 
-- [NumPy Core](./docs/NumPy%20Core/index.md) - Master the engine behind data science that makes Python as fast as C!
+- [NumPy Core](https://setiadeepanshu01.github.io/Code-Pilot/NumPy%20Core) - Master the engine behind data science that makes Python as fast as C!
 
-- [OpenManus](./docs/OpenManus/index.md) - Build AI agents with digital brains that think, learn, and use tools just like humans do!
+- [OpenManus](https://setiadeepanshu01.github.io/Code-Pilot/OpenManus) - Build AI agents with digital brains that think, learn, and use tools just like humans do!
 
-- [Pydantic Core](./docs/Pydantic%20Core/index.md) - Validate data at rocket speed with just Python type hints!
+- [Pydantic Core](https://setiadeepanshu01.github.io/Code-Pilot/Pydantic%20Core) - Validate data at rocket speed with just Python type hints!
 
-- [Requests](./docs/Requests/index.md) - Talk to the internet in Python with code so simple it feels like cheating!
+- [Requests](https://setiadeepanshu01.github.io/Code-Pilot/Requests) - Talk to the internet in Python with code so simple it feels like cheating!
 
-- [SmolaAgents](./docs/SmolaAgents/index.md) - Build tiny AI agents that punch way above their weight class!
+- [SmolaAgents](./docs/SmolaAgents) - Build tiny AI agents that punch way above their weight class!
 
 ## 🚀 Getting Started
 
